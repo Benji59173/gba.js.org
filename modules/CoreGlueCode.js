@@ -47,6 +47,7 @@
     "mariokart": "Mario Kart: Super Circuit",
     "marioparty": "Mario Party Advance",
     "mariopinball": "Mario Pinball Land",
+    "mariovsdk": "Mario vs Donkey Kong",
     "megamanbass": "Megaman & Bass",
     "megaman_battle1": "Megaman Battle Network 1",
     "megaman_battle2": "Megaman Battle Network 2",
@@ -61,6 +62,7 @@
     "megaman_zero4": "Megaman Zero 4",
     "metalslug": "Metal Slug Advance",
     "metroid_fusion": "Metroid Fusion",
+    "metroid_zeromission": "Metroid Zero Mission",
     "momotarou_dentetsu": "Momotarou Dentetsu G Gold Deck wo Tsukure!",
     "monopoly": "Monopoly",
     "monster_force": "Monster Force",
@@ -94,6 +96,7 @@
     "sonicpinball": "Sonic Pinball",
     "super_street_fighter_2_turbo_revival": "Super Street Fighter II: Turbo Revival",
     "super_street_fighter_3_alpha": "Super Street Fighter III: Alpha",
+	"sword_of_mana": "Sword of Mana",
     "tales_of_phantasia": "Tales of Phantasia",
     "tak2_staff_of_dreams": "Tak 2: The Staff of Dreams",
     "tetris_worlds": "Tetris Worlds",
@@ -233,7 +236,7 @@ window.onload = function() {
 }
 
 function downloadBIOS() {
-    downloadFile("binaries/gba_bios.bin", registerBIOS);
+    downloadFile("../binaries/gba_bios.bin", registerBIOS);
 }
 
 function registerBIOS() {
@@ -243,7 +246,7 @@ function registerBIOS() {
 
 function downloadROM(gamename) {
     writeRedTemporaryText("Downloading \"" + games[gamename] + ".\"");
-    downloadFile("binaries/" + gamename + ".gba", registerROM);
+    downloadFile("../binaries/" + gamename + ".gba", registerROM);
 }
 
 function registerROM() {
